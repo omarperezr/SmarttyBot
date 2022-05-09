@@ -1,7 +1,7 @@
 # SmarttyBot
 ## _The smartest multiplatform bot_
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/omarperezr/SmarttyBot)](https://goreportcard.com/report/github.com/omarperezr/SmarttyBot) [![Build Status](https://app.travis-ci.com/omarperezr/SmarttyBot.svg?branch=main)](https://app.travis-ci.com/omarperezr/SmarttyBot)
+[![Go Report Card](https://goreportcard.com/badge/github.com/omarperezr/SmarttyBot)](https://goreportcard.com/report/github.com/omarperezr/SmarttyBot) [![Build Status](https://app.travis-ci.com/omarperezr/SmarttyBot.svg?branch=main)](https://app.travis-ci.com/omarperezr/SmarttyBot) [![Maintainability](https://api.codeclimate.com/v1/badges/5bdbd92a6997070a88e4/maintainability)](https://codeclimate.com/github/omarperezr/SmarttyBot/maintainability)
 
 SmarttyBot is a multiplatform bot that uses natural language to execute functions using discord, telegram, email and gitlab 
 
