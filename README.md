@@ -19,11 +19,14 @@ SmarttyBot is a multiplatform bot that uses natural language to execute function
 
 ## Tutorial
 
-## Installation
+## Installation & Execution
 SmarttyBot requires [Go] v1.18+ to run.
 
 ```go
+git clone github.com/omarperezr/SmarttyBot
+cd SmarttyBot
 go build
+./main
 ```
 ## Donate
 #### Want to contribute?
