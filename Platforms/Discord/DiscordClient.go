@@ -8,6 +8,7 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/omarperezr/SmarttyBot/Core/Config"
 	"github.com/omarperezr/SmarttyBot/Utils"
 
 	"github.com/bwmarrin/discordgo"
@@ -22,6 +23,16 @@ type DiscordClient struct {
 	TelegramClient  *tgbotapi.BotAPI
 	Email_from_list *map[string]string
 	SendEmail       func(string, string, string)
+}
+
+func SetUp(config *Config.Config) DiscordClient {
+	instance := DiscordClient{
+		ApiKey:          config.Discord_Api_Key,
+		TelegramIDs:     config.Telegram_ids,
+		DiscordMentions: config.Discord_mentions,
+		Email_from_list: config.From_list,
+	}
+	return instance
 }
 
 func (client *DiscordClient) Init() {

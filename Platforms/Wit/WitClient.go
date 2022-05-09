@@ -8,6 +8,7 @@ import (
 	"os"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
+	"github.com/omarperezr/SmarttyBot/Core/Config"
 	witai "github.com/wit-ai/wit-go"
 )
 
@@ -15,7 +16,16 @@ type WitClient struct {
 	ApiKey               string
 	Client               *witai.Client
 	TeleWitChan          chan string
-	AwaitingCallbackData map[string]interface{}
+	AwaitingCallbackData *map[string]interface{}
+}
+
+func SetUp(config *Config.Config) WitClient {
+	instance := WitClient{
+		ApiKey:               config.WIT_Api_Key,
+		TeleWitChan:          config.Tele_wit_chan,
+		AwaitingCallbackData: config.Callback_map,
+	}
+	return instance
 }
 
 // Init creates a new Wit Ai client to parse messages
@@ -83,7 +93,7 @@ func (client *WitClient) process_telegram_data(tele_data string, tele_map map[st
 	if tele_map != nil {
 		if tele_map["purpose"] == "report" {
 			key := fmt.Sprintf("report|%s", tele_data)
-			client.AwaitingCallbackData[key] = tele_map
+			(*client.AwaitingCallbackData)[key] = tele_map
 		}
 	}
 }

@@ -10,6 +10,7 @@ import (
 
 	"gopkg.in/gomail.v2"
 
+	"github.com/omarperezr/SmarttyBot/Core/Config"
 	dClient "github.com/omarperezr/SmarttyBot/Platforms/Discord"
 
 	"github.com/emersion/go-imap"
@@ -27,6 +28,19 @@ type EmailClient struct {
 	Dialer        *gomail.Dialer
 	From_list     *map[string]string
 	DiscordClient *dClient.DiscordClient
+}
+
+func SetUp(config *Config.Config) EmailClient {
+	instance := EmailClient{
+		Email:      config.Email_Account,
+		Password:   config.Email_Password,
+		SMTPServer: config.SMTP_Server,
+		SMTPPort:   config.SMTP_Port,
+		IMAPServer: config.IMAP_Server,
+		IMAPPort:   config.IMAP_Port,
+		From_list:  config.From_list,
+	}
+	return instance
 }
 
 func (client *EmailClient) Init() {
