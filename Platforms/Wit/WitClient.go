@@ -67,7 +67,7 @@ func (client *WitClient) create_group(parameters []string) (string, interface{})
 	return fmt.Sprintf("Creating group called %s and adding %v!\n", parameters[0], parameters[1:]), nil
 }
 
-// get_parameters Gets a list of paramaters from the received telegram message
+// get_parameters Gets a list of parameters from the received telegram message
 func (client *WitClient) get_parameters(parameters_list []interface{}) []string {
 	var parameters []string
 
