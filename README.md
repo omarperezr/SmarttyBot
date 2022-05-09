@@ -6,9 +6,8 @@
 SmarttyBot is a multiplatform bot that uses natural language to execute functions using discord, telegram, email and gitlab 
 
 - Set up all your accounts and get all the api tokens
-- Train your own [WitAI] model
-- Create you own actions
-- ✨SmarttyBot✨
+- Create and train your [WitAI] model
+- _SmarttyBot will now connect every platform to make your life easier_
 
 ## Features
 - Connect any account with any other account to create unique solutions and automations
