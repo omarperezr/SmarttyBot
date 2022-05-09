@@ -1,0 +1,40 @@
+{
+    "markup": [
+        {
+            "status": {
+                "text": "Status",
+                "callbackData": "report:status"
+            }
+        },
+        {
+            "issues_todo": {
+                "text": "Issues to do",
+                "callbackData": "report:issues_todo"
+            },
+            "issues_in_progress": {
+                "text": "Issues in progress",
+                "callbackData": "report:issues_in_progress"
+            },
+            "issues_done": {
+                "text": "Issues done",
+                "callbackData": "report:issues_done"
+            }
+        },
+        {
+            "oldest_todo": {
+                "text": "Oldest issue to do",
+                "callbackData": "report:oldest_todo"
+            },
+            "oldest_in_progress": {
+                "text": "Oldest issue in progress",
+                "callbackData": "report:oldest_in_progress"
+            }
+        },
+        {
+            "home": {
+                "text": "🏠 Home",
+                "callbackData": "report:home"
+            }
+        }
+    ]
+}
