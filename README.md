@@ -32,6 +32,9 @@ cd SmarttyBot
 
 ```go
 go build
+```
+
+```sh
 ./main
 ```
 
