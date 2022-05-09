@@ -11,8 +11,12 @@ SmarttyBot is a multiplatform bot that uses natural language to execute function
 - ✨SmarttyBot✨
 
 ## Features
-
-- Connect any account with any other account an create unique solutions
+- Connect any account with any other account to create unique solutions and automations
+- Easily add your own functions with Python or Go
+- Train your own WitAI model and easily connect your WitAI actions with your own methods
+- Monitor your accounts and set up notifications to any other account
+- Create your own telegram markup for menus
+- _The only limit is your imagination_
 
 ## Tutorial
 
