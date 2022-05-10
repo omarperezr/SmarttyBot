@@ -23,15 +23,20 @@ SmarttyBot is a multiplatform bot that uses natural language to execute function
 To set up WitAI you have to do 3 things:
 - Login on [WitAI] with facebook
 - Create your app
-- Train your app
+- Train your app, make sure that all intents are the name of the function that is going to be executed
 
-And that is it, with that you will have set up the natural language module, for more details go to https://wit.ai/docs/quickstart
+With that you will have set up the natural language module, for more details go to https://wit.ai/docs/quickstart
 
 After that:
 - Go to https://wit.ai/apps/
 - Select your app
 - Go to settings
 - Copy the `Server Access Token` into you .env
+- Add the new function to this map 
+https://github.com/omarperezr/SmarttyBot/blob/83a8d8e944267610420e3cc47da0991602ba94e2/Platforms/Wit/WitClient.go#L115
+https://github.com/omarperezr/SmarttyBot/blob/83a8d8e944267610420e3cc47da0991602ba94e2/Platforms/Wit/WitClient.go#L116
+
+with the key being the intent we set up before and the value being the new funtion to be executed
 ```sh
 WIT_API_KEY="1234ASDFGHJ"
 ```
