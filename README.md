@@ -19,6 +19,56 @@ SmarttyBot is a multiplatform bot that uses natural language to execute function
 
 ## Tutorial
 
+### Step 1: WitAI Setup
+To set up WitAI you have to do 3 things:
+- Login on [WitAI] with facebook
+- Create your app
+- Train your app
+
+And that is it, with that you will have set up the natural language module, for more details go to https://wit.ai/docs/quickstart
+
+After that:
+- Go to https://wit.ai/apps/
+- Select your app
+- Go to settings
+- Copy the `Server Access Token` into you .env
+```sh
+WIT_API_KEY="1234ASDFGHJ"
+```
+
+### Step 2: Telegram Setup
+You will need to create a bot
+- Go to https://telegram.me/botfather on telegram
+- Send /newbot to create a new Telegram bot, 
+- When asked, enter a name for the bot
+- Give the Telegram bot a unique username. Note that the bot name must end with the word "bot" (case-insensitive).
+- Copy and paste the Telegram bot's access token to the .env file.
+
+```sh
+TELEGRAM_API_KEY="123456TELEGRAMMMMMMAPI"
+```
+### Step 3: Discord Setup
+To set up a discord bot follow this steps https://discordpy.readthedocs.io/en/stable/discord.html
+
+Once you are done
+- Go to 'Bot' 
+- Select 'Reset token' 
+- Copy the token that appears into the .env file
+```sh
+DISCORD_API_KEY="DDDIIISSSCCCOOORRRRDDDAAAAPPPIII"
+```
+
+### Step 4: Email setup
+Simply add your email credentials and server settings like this
+```sh
+EMAIL_ACCOUNT="gmailaccount@gmail.com"
+EMAIL_PASWORD="emailPassword"
+SMTP_SERVER="smtp.gmail.com"
+SMTP_PORT=587
+IMAP_SERVER="imap.gmail.com"
+IMAP_PORT=993
+```
+
 ## Installation & Execution
 SmarttyBot requires [Go] v1.18+ to run.
 
