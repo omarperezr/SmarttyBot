@@ -48,6 +48,8 @@ You will need to create a bot
 - When asked, enter a name for the bot
 - Give the Telegram bot a unique username. Note that the bot name must end with the word "bot" (case-insensitive).
 - Copy and paste the Telegram bot's access token to the .env file.
+- Make sure to change "smartty_bridge_bot" to the name of your telegram bot
+https://github.com/omarperezr/SmarttyBot/blob/758c7402dc78d2de74427d08fcca2d3e887373bc/Platforms/Telegram/id_association.go#L13
 
 ```sh
 TELEGRAM_API_KEY="123456TELEGRAMMMMMMAPI"
