@@ -7,7 +7,7 @@ SmarttyBot is a multiplatform bot that uses natural language to execute function
 
 - Set up all your accounts and get all the api tokens
 - Create and train your [WitAI] model
-- _SmarttyBot will now connect every platform to make your life easier_
+- _Let SmarttyBot make your life easier_
 
 ## Features
 - Connect any account with any other account to create unique solutions and automations
